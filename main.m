@@ -5,9 +5,9 @@ close all
 %% Load files 
 file_name = 'Optical.png';
 
-img = double(imread(strcat('EX_2_data\',file_name)));
+img = double(imread(strcat('Data\',file_name)));
 img = img(:,:,1);
-img2 = imread(strcat('EX_2_data\',file_name));
+img2 = imread(strcat('Data\',file_name));
 img2 = img2(:,:,1);
 figure(1)
 imagesc(img);
@@ -100,7 +100,7 @@ viscircles(max_indicies, max_radius,'Color','r');
 
 
 if save_file == 1
-    save(strcat(strcat('Output_data\circles_',file_name(1:end-3)),'mat'), 'max_indicies', 'max_radius' ,'gauss_t_1','gauss_t_2','max_t','min_t','step_t');
+    save(strcat(strcat('Output_imgs\circles_',file_name(1:end-3)),'mat'), 'max_indicies', 'max_radius' ,'gauss_t_1','gauss_t_2','max_t','min_t','step_t');
 end
 
 
