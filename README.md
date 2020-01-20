@@ -1,4 +1,4 @@
-# Scale-space-blob-detection-on-X-ray-CT
+# Scale-space blob detection of fibre glass
 
 Objective: detect and measure diameters of glass fibres in images of glass fibre composite captured by X-ray CT-scanner, optical microscope and SEM.  
 
